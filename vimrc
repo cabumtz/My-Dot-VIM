@@ -33,7 +33,6 @@ set foldopen-=undo
 set wildignore=*.pyc
 set smartindent
 set autoindent
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapeos
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -65,4 +64,13 @@ au BufRead,BufNewFile *.html    set shiftwidth=2 tabstop=2 filetype=html.w2ptpl.
 set t_Co=256
 set background=dark
 syntax on
-colorscheme typofree
+colorscheme candycode
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has('gui_running')
+        set go-=T
+        set go-=r
+        set go-=L
+endif
