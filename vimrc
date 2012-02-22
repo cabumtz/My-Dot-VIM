@@ -59,16 +59,15 @@ au BufRead,BufNewFile *.erb     				set shiftwidth=2 tabstop=2 filetype=html.erb
 au BufRead,BufNewFile *.html    				set shiftwidth=2 tabstop=2 filetype=html.w2ptpl.djtpl.javascript.jquery
 au BufRead,BufNewFile *.less    				set shiftwidth=2 tabstop=2 filetype=less
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} 	set filetype=mkd
-
-
 au BufEnter * silent! lcd %:p:h
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
 set background=dark
 syntax on
-colorscheme candycode
+colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI 
