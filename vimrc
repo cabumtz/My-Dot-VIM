@@ -51,13 +51,17 @@ map <F10> <Esc>:source ~/.vim/.session<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Autocommands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au BufNewFile,BufRead *.py 	set shiftwidth=4 tabstop=4 filetype=python.web2py.django
-au BufRead,BufNewFile *.php	set filetype=php.html
-au BufRead,BufNewFile *.js      set filetype=javascript.jquery
-au BufRead,BufNewFile *.rb      set filetype=ruby.rails
-au BufRead,BufNewFile *.erb     set shiftwidth=2 tabstop=2 filetype=html.erb.javascript.jquery
-au BufRead,BufNewFile *.html    set shiftwidth=2 tabstop=2 filetype=html.w2ptpl.djtpl.javascript.jquery
+au BufNewFile,BufRead *.py 					set shiftwidth=4 tabstop=4 filetype=python.web2py.django
+au BufRead,BufNewFile *.php					set shiftwidth=2 tabstop=2 filetype=php.html
+au BufRead,BufNewFile *.js      				set shiftwidth=2 tabstop=2 filetype=javascript.jquery
+au BufRead,BufNewFile *.rb      				set shiftwidth=2 tabstop=2 filetype=ruby.rails
+au BufRead,BufNewFile *.erb     				set shiftwidth=2 tabstop=2 filetype=html.erb.javascript.jquery
+au BufRead,BufNewFile *.html    				set shiftwidth=2 tabstop=2 filetype=html.w2ptpl.djtpl.javascript.jquery
+au BufRead,BufNewFile *.less    				set shiftwidth=2 tabstop=2 filetype=less
+au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} 	set filetype=mkd
 
+
+au BufEnter * silent! lcd %:p:h
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
