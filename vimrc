@@ -64,10 +64,23 @@ au BufEnter * silent! lcd %:p:h
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Themes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:solarized_termtrans=0
+let g:solarized_degrade=0
+let g:solarized_bold=1
+let g:solarized_underline=1
+let g:solarized_italic=1
+let g:solarized_termcolors=16
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+let g:solarized_diffmode="high"
+let g:solarized_hitrail=0
+let g:solarized_menu=1
+
 set t_Co=256
 set background=dark
 syntax on
 colorscheme solarized
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI 
