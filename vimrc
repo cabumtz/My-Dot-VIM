@@ -39,19 +39,16 @@ set autoindent
 map <Space> i
 map <S-z> zM
 map <S-x> zR
-map <S-w> <Esc>:w<CR>
 map <S-c> <Esc>:tabclose<CR>
 map <S-p> <Esc>:tabprevious<CR>
 map <S-n> <Esc>:tabnext<CR>
-map <F3> <Esc>:NERDTreeToggle<CR>
-map <F4> ggvG=<CR>
-map <F9> <Esc>:mksession! ~/.vim/.session<CR>
-map <F10> <Esc>:source ~/.vim/.session<CR>
+map <S-Space> <Esc>:NERDTreeToggle<CR>
+map <S-i> ggvG=<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Autocommands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au BufNewFile,BufRead *.py 					set shiftwidth=4 tabstop=4 filetype=python.web2py.django
+au BufNewFile,BufRead *.py 					set shiftwidth=4 tabstop=4 filetype=python.web2py.django softtabstop=4 expandtab smarttab 
 au BufRead,BufNewFile *.php					set shiftwidth=2 tabstop=2 filetype=php.html
 au BufRead,BufNewFile *.js      				set shiftwidth=2 tabstop=2 filetype=javascript.jquery
 au BufRead,BufNewFile *.rb      				set shiftwidth=2 tabstop=2 filetype=ruby.rails
